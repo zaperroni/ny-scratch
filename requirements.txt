@@ -2,5 +2,5 @@ beautifulsoup4
 requests
 pandas
 flask
-flask-corsgunicorn
+flask-cors
 gunicorn
