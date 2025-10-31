@@ -1,11 +1,19 @@
 from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
+from flask import Flask, jsonify
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
+
 import json
 import pandas as pd
 import os
 
 app = Flask(__name__, static_folder="build", static_url_path="")
 CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
+
 
 DATA_FILE = "ny_scratch_data.json"
 HISTORY_FILE = "ny_scratch_history.json"
