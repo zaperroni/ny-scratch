@@ -1,5 +1,3 @@
-from flask import Flask, jsonify, send_from_directory
-from flask_cors import CORS
 from flask import Flask, jsonify
 from flask_cors import CORS
 
