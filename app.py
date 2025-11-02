@@ -28,10 +28,30 @@ def load_history():
         return json.load(f)
 
 # --- API routes ---
-@app.route("/api/recommendations")
-def recommendations():
+@app.route("/api/recommendation")
+def recommendation():
+    """Return the single best game by smart scoring"""
     data = load_data()
-    return jsonify(data)
+    if not data:
+        return jsonify({"error": "No data available"}), 404
+
+    df = pd.DataFrame(data)
+
+    # Avoid divide-by-zero in normalization
+    def safe_normalize(series):
+        if series.max() == series.min():
+            return pd.Series([0.0] * len(series))
+        return (series - series.min()) / (series.max() - series.min())
+
+    df["value_norm"] = safe_normalize(df["expected_value"])
+    df["prize_norm"] = safe_normalize(df["remaining_prizes"])
+    df["grand_norm"] = safe_normalize(df["grand_prizes_remaining"])
+
+    df["smart_score"] = 0.5 * df["value_norm"] + 0.3 * df["prize_norm"] + 0.2 * df["grand_norm"]
+
+    best = df.sort_values("smart_score", ascending=False).head(1).iloc[0].to_dict()
+    return jsonify(best)
+
 
 @app.route("/api/best_any")
 def best_any():
