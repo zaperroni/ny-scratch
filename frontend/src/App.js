@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [bestAny, setBestAny] = useState([]);
   const [bestGrand, setBestGrand] = useState([]);
+  const [lastUpdated, setLastUpdated] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -12,19 +13,28 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const [anyRes, grandRes] = await Promise.all([
+        const [anyRes, grandRes, histRes] = await Promise.all([
           fetch(`${API_BASE}/best_any`),
-          fetch(`${API_BASE}/best_grand`)
+          fetch(`${API_BASE}/best_grand`),
+          fetch(`${API_BASE}/history`)
         ]);
 
-        if (!anyRes.ok || !grandRes.ok)
+        if (!anyRes.ok || !grandRes.ok || !histRes.ok)
           throw new Error("Backend request failed");
 
-        const anyData = await anyRes.json();
-        const grandData = await grandRes.json();
+        const [anyData, grandData, historyData] = await Promise.all([
+          anyRes.json(),
+          grandRes.json(),
+          histRes.json()
+        ]);
 
         setBestAny(anyData);
         setBestGrand(grandData);
+
+        if (historyData.length > 0) {
+          const latest = historyData[historyData.length - 1].timestamp;
+          setLastUpdated(new Date(latest));
+        }
       } catch (err) {
         console.error("Error fetching data:", err);
         setError("Unable to load data. Please try again later.");
@@ -36,12 +46,32 @@ function App() {
     fetchData();
   }, []);
 
-  if (loading) return <div className="App"><h2>Loading scratch-off data…</h2></div>;
-  if (error) return <div className="App"><h2>⚠️ {error}</h2></div>;
+  if (loading)
+    return (
+      <div className="App">
+        <div className="loading">Loading scratch-off data…</div>
+      </div>
+    );
+
+  if (error)
+    return (
+      <div className="App">
+        <div className="error">⚠️ {error}</div>
+      </div>
+    );
 
   return (
     <div className="App">
-      <h1>🎯 NY Scratch-Off Analyzer</h1>
+      <header className="header">
+        <h1>🎯 NY Scratch-Off Analyzer</h1>
+        <p className="subtitle">Live insights from NY Lottery data</p>
+        {lastUpdated && (
+          <p className="updated">
+            ⏱️ Updated: {lastUpdated.toLocaleDateString()}{" "}
+            {lastUpdated.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+          </p>
+        )}
+      </header>
 
       <div className="grid">
         <div className="card">
@@ -88,6 +118,10 @@ function App() {
           </table>
         </div>
       </div>
+
+      <footer className="footer">
+        Data auto-updates daily from NY Lottery Open Data • Built by Zappico Analytics 🧠
+      </footer>
     </div>
   );
 }
