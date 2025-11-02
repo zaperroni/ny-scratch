@@ -15,75 +15,112 @@ def fetch_dataset():
     print(f"✅ Retrieved {len(data)} rows from dataset.")
     return pd.DataFrame(data)
 
-def clean_and_compute(df):
-    """Convert and compute realistic expected value metrics."""
-    print("📊 Raw data columns:", df.columns.tolist())
-    print("First few rows:\n", df.head(3))
+def _clean_money_series(s):
+    """Turn strings like '$10,000' into floats."""
+    return (
+        s.astype(str)
+         .str.replace(r"[^0-9.]", "", regex=True)
+         .replace({"": "0"})
+         .astype(float)
+    )
 
-    # Remove $ and commas before numeric conversion
+def estimate_ticket_price(top_prize):
+    """
+    Very simple, transparent heuristic for NY scratchers.
+    You can refine these thresholds later with a price table per game.
+    """
+    if top_prize >= 20_000_000:  # some $50 games
+        return 50
+    if top_prize >= 10_000_000:
+        return 30  # many $30 games carry $10M+ top prizes
+    if top_prize >= 5_000_000:
+        return 20
+    if top_prize >= 2_000_000:
+        return 10
+    if top_prize >= 500_000:
+        return 5
+    if top_prize >= 20_000:
+        return 2
+    return 1
+
+def clean_and_compute(df):
+    """Compute tier-weighted EV, EV per dollar, and other useful fields."""
+    # Parse/convert numerics safely
     if "prize_amount" in df.columns:
-        df["prize_amount"] = (
-            df["prize_amount"]
-            .astype(str)
-            .str.replace(r"[^0-9.]", "", regex=True)
+        df["prize_amount"] = _clean_money_series(df["prize_amount"])
+
+    for col in ["game_number", "paid", "unpaid", "total"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+
+    # Standardize column names we use downstream
+    df = df.rename(
+        columns={
+            "game_name": "name",
+            "game_number": "number",
+            "unpaid": "unpaid",
+            "total": "total",
+        }
+    )
+
+    # Keep only rows with a real prize tier and prize counts
+    df = df[(df["prize_amount"] > 0) & (df["total"] > 0)]
+
+    # Build per-game metrics
+    def summarize_game(g):
+        # Top prize for the game
+        top_prize = g["prize_amount"].max()
+
+        # Tier-weighted EV of what's left (unitless dollars; proxy)
+        # EV_raw = sum(prize_amount * (unpaid / total))
+        ev_raw = float((g["prize_amount"] * (g["unpaid"] / g["total"])).sum())
+
+        # Estimate ticket price and compute EV per $1 cost
+        ticket_price = estimate_ticket_price(top_prize)
+        ev_per_dollar = ev_raw / ticket_price if ticket_price > 0 else 0.0
+
+        # Odds-style summaries
+        remaining_prizes = int(g["unpaid"].sum())
+        total_prizes = int(g["total"].sum())
+        remaining_ratio = (remaining_prizes / total_prizes) if total_prizes else 0.0
+
+        # “Grand” = count of unpaid at the top tier
+        grand_unpaid = int(g.loc[g["prize_amount"] == top_prize, "unpaid"].sum())
+
+        return pd.Series(
+            {
+                "name": g["name"].iloc[0],
+                "top_prize": float(top_prize),
+                "ticket_price_est": float(ticket_price),
+                "ev_raw": round(ev_raw, 4),
+                # Keep this for your frontend table — show EV per dollar
+                "expected_value": round(ev_per_dollar, 2),
+                "ev_per_dollar": round(ev_per_dollar, 4),
+                "remaining_prizes": remaining_prizes,
+                "total_prizes": total_prizes,
+                "remaining_ratio": round(remaining_ratio, 6),
+                "grand_prizes_remaining": grand_unpaid,
+                # For compatibility with your current UI “Prize Amount” column:
+                "prize_amount": float(top_prize),
+            }
         )
 
-    # Convert numeric fields safely
-    for col in ["game_number", "prize_amount", "paid", "unpaid", "total"]:
-        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+    summary = df.groupby("name", as_index=False).apply(summarize_game)
 
-    # Rename columns for consistency
-    df.rename(columns={
-        "game_name": "name",
-        "game_number": "number",
-        "unpaid": "remaining_prizes",
-        "total": "total_prizes"
-    }, inplace=True)
+    # Rank by EV per dollar by default
+    summary = summary.sort_values("ev_per_dollar", ascending=False)
 
-    # Remove zero rows
-    df = df[(df["prize_amount"] > 0) & (df["total_prizes"] > 0)]
+    # Normalized score useful for “top lists”
+    max_evpd = summary["ev_per_dollar"].max() or 1.0
+    summary["value_score"] = (summary["ev_per_dollar"] / max_evpd).round(6)
 
-    # Group by game name
-    summary = (
-        df.groupby("name")
-          .agg({
-              "remaining_prizes": "sum",
-              "total_prizes": "sum",
-              "prize_amount": "max"
-          })
-          .reset_index()
-    )
-
-    # Calculate ratios and expected values
-    summary["remaining_ratio"] = (
-        summary["remaining_prizes"] / summary["total_prizes"]
-    ).fillna(0)
-
-    # Compute expected values
-    summary["expected_value"] = (
-        summary["prize_amount"] * summary["remaining_ratio"] * 0.1
-    ).round(2)
-
-    summary["value_score"] = (
-        summary["expected_value"] / summary["expected_value"].max()
-    ).fillna(0)
-
-    # Estimate grand prizes (max remaining per game)
-    summary["grand_prizes_remaining"] = (
-        df.groupby("name")["remaining_prizes"].max().values
-    )
-
-    print("🔍 Sample cleaned data:")
-    print(summary.head(10))
-    print("Summary shape:", summary.shape)
-
-    return summary.sort_values(by="expected_value", ascending=False)
+    return summary.reset_index(drop=True)
 
 def scrape_all():
     df = fetch_dataset()
     result_df = clean_and_compute(df)
 
-    # Save the cleaned dataset
+    # Save the cleaned dataset the frontend/Flask serve
     result_df.to_json("ny_scratch_data.json", orient="records", indent=2)
 
     # Append to historical log
@@ -98,10 +135,12 @@ def scrape_all():
             except json.JSONDecodeError:
                 pass
 
-    history.append({
-        "timestamp": timestamp,
-        "data": result_df.to_dict(orient="records")
-    })
+    history.append(
+        {
+            "timestamp": timestamp,
+            "data": result_df.to_dict(orient="records"),
+        }
+    )
 
     with open(history_path, "w") as f:
         json.dump(history, f, indent=2)
