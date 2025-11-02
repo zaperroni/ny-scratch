@@ -14,7 +14,7 @@ function App() {
     async function fetchData() {
       try {
         const [gamesRes, bestRes] = await Promise.all([
-          fetch(`${API_BASE}/recommendations`),
+          fetch(`${API_BASE}/best_any`),
           fetch(`${API_BASE}/recommendation`)
         ]);
 
