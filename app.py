@@ -6,10 +6,8 @@ import os
 
 # --- Initialize Flask and enable CORS ---
 app = Flask(__name__, static_folder="build", static_url_path="")
-CORS(app, resources={r"/api/*": {"origins": [
-    "https://ny-scratch.onrender.com",
-    "http://localhost:3000"
-]}})
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 # --- File locations ---
 DATA_FILE = "ny_scratch_data.json"
