@@ -43,7 +43,7 @@ function App() {
     <div className="App">
       <h1>🎯 NY Scratch-Off Analyzer</h1>
 
-      <div className="cards">
+      <div className="grid">
         <div className="card">
           <h2>💰 Top 10 Tickets — Best Chance for Any Prize</h2>
           <table>
