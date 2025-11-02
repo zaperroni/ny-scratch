@@ -1,0 +1,842 @@
+[
+  {
+    "name":"$1,000,000 BONUS CASHWORD",
+    "remaining_prizes":3114059,
+    "total_prizes":4241798,
+    "prize_amount":0.0,
+    "remaining_ratio":0.7341365619,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1350405
+  },
+  {
+    "name":"ELECTRIC 10X",
+    "remaining_prizes":172307,
+    "total_prizes":4582300,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0376027323,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":95375
+  },
+  {
+    "name":"IT TAKES 2",
+    "remaining_prizes":317582,
+    "total_prizes":2023666,
+    "prize_amount":0.0,
+    "remaining_ratio":0.156934,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":164617
+  },
+  {
+    "name":"INSTANT TAKE 5",
+    "remaining_prizes":6115921,
+    "total_prizes":57727311,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1059450179,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":2962912
+  },
+  {
+    "name":"INSTANT $500",
+    "remaining_prizes":830918,
+    "total_prizes":4427826,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1876582323,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":354271
+  },
+  {
+    "name":"HOLIDAY RICHES",
+    "remaining_prizes":142437,
+    "total_prizes":1249489,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1139962016,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":65479
+  },
+  {
+    "name":"HIT IT BIG",
+    "remaining_prizes":1021644,
+    "total_prizes":2510878,
+    "prize_amount":0.0,
+    "remaining_ratio":0.4068871526,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":471239
+  },
+  {
+    "name":"FIND THE 7S",
+    "remaining_prizes":272309,
+    "total_prizes":2095050,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1299773275,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":144764
+  },
+  {
+    "name":"EXTREME 8S",
+    "remaining_prizes":838010,
+    "total_prizes":2375546,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3527652169,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":371570
+  },
+  {
+    "name":"EXTRA! EXTRA! BONUS CASHWORD",
+    "remaining_prizes":191157,
+    "total_prizes":2551432,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0749214559,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":128292
+  },
+  {
+    "name":"DOUBLE YOUR DOLLARS",
+    "remaining_prizes":142650,
+    "total_prizes":2207949,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0646074706,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":70039
+  },
+  {
+    "name":"$1,000,000 CASHWORD BONUS",
+    "remaining_prizes":691889,
+    "total_prizes":4222449,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1638596464,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":314332
+  },
+  {
+    "name":"DOUBLE WIN",
+    "remaining_prizes":428542,
+    "total_prizes":2166502,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1978036485,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":180046
+  },
+  {
+    "name":"DOUBLE TRIPLE CASHWORD",
+    "remaining_prizes":3867659,
+    "total_prizes":9004236,
+    "prize_amount":0.0,
+    "remaining_ratio":0.4295377198,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1527115
+  },
+  {
+    "name":"DOUBLE DOUBLER",
+    "remaining_prizes":231155,
+    "total_prizes":2135415,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1082482796,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":116817
+  },
+  {
+    "name":"DOUBLE DEUCES",
+    "remaining_prizes":243275,
+    "total_prizes":1971726,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1233817478,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":103892
+  },
+  {
+    "name":"CASINO NIGHTS",
+    "remaining_prizes":496115,
+    "total_prizes":1375436,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3606965355,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":202946
+  },
+  {
+    "name":"CASHWORD EXTRA!",
+    "remaining_prizes":2491327,
+    "total_prizes":3766301,
+    "prize_amount":0.0,
+    "remaining_ratio":0.6614784639,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1139573
+  },
+  {
+    "name":"CASHWORD DOUBLER",
+    "remaining_prizes":17503912,
+    "total_prizes":45858986,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3816899048,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":5938866
+  },
+  {
+    "name":"CASHWORD",
+    "remaining_prizes":6634176,
+    "total_prizes":16355827,
+    "prize_amount":0.0,
+    "remaining_ratio":0.4056154421,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":2335710
+  },
+  {
+    "name":"JACKPOT FORTUNE",
+    "remaining_prizes":1489278,
+    "total_prizes":4965724,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2999115537,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":872590
+  },
+  {
+    "name":"LOOSE CHANGE",
+    "remaining_prizes":5130509,
+    "total_prizes":56658725,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0905510846,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":2288861
+  },
+  {
+    "name":"LOOSE CHANGE MULTIPLIER",
+    "remaining_prizes":145227,
+    "total_prizes":3261832,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0445231391,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":65606
+  },
+  {
+    "name":"LOTERIA",
+    "remaining_prizes":201621,
+    "total_prizes":3651494,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0552160294,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":103357
+  },
+  {
+    "name":"RUBY RED 7S",
+    "remaining_prizes":420693,
+    "total_prizes":2973581,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1414768927,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":191400
+  },
+  {
+    "name":"PLUS THE MONEY",
+    "remaining_prizes":107108,
+    "total_prizes":1997795,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0536131085,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":60984
+  },
+  {
+    "name":"PLATINUM POWER",
+    "remaining_prizes":124933,
+    "total_prizes":2129874,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0586574605,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":57399
+  },
+  {
+    "name":"PINK PANTHER DIAMOND 7S",
+    "remaining_prizes":166783,
+    "total_prizes":1326899,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1256938169,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":83607
+  },
+  {
+    "name":"NEW YORK MILLIONAIRE",
+    "remaining_prizes":173861,
+    "total_prizes":1780065,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0976711525,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":80507
+  },
+  {
+    "name":"MYSTERY MULTIPLIER",
+    "remaining_prizes":3871410,
+    "total_prizes":4943162,
+    "prize_amount":0.0,
+    "remaining_ratio":0.783184933,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1419095
+  },
+  {
+    "name":"MULTIPLY YOUR NUMBERS",
+    "remaining_prizes":164421,
+    "total_prizes":2520220,
+    "prize_amount":0.0,
+    "remaining_ratio":0.065240733,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":76714
+  },
+  {
+    "name":"MULTIPLIER CRAZE",
+    "remaining_prizes":536556,
+    "total_prizes":4551715,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1178799639,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":271484
+  },
+  {
+    "name":"MORE MONEY",
+    "remaining_prizes":903176,
+    "total_prizes":1393499,
+    "prize_amount":0.0,
+    "remaining_ratio":0.6481353772,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":363741
+  },
+  {
+    "name":"MONEY RUSH",
+    "remaining_prizes":89282,
+    "total_prizes":1343500,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0664547823,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":71894
+  },
+  {
+    "name":"MONEY MATCH",
+    "remaining_prizes":2500518,
+    "total_prizes":4363131,
+    "prize_amount":0.0,
+    "remaining_ratio":0.5731017473,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1111818
+  },
+  {
+    "name":"MILLIONAIRE MAKER",
+    "remaining_prizes":1346726,
+    "total_prizes":5573263,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2416404896,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":532819
+  },
+  {
+    "name":"MATCH FOR CASH",
+    "remaining_prizes":475585,
+    "total_prizes":2345794,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2027394562,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":203878
+  },
+  {
+    "name":"LUCKY LINES",
+    "remaining_prizes":685746,
+    "total_prizes":2673342,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2565126347,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":371846
+  },
+  {
+    "name":"LUCKY CASH",
+    "remaining_prizes":427698,
+    "total_prizes":1495627,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2859656853,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":183296
+  },
+  {
+    "name":"LUCKY 7S",
+    "remaining_prizes":3929102,
+    "total_prizes":15369124,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2556490533,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1296110
+  },
+  {
+    "name":"LUCKY 13",
+    "remaining_prizes":1057677,
+    "total_prizes":1432028,
+    "prize_amount":0.0,
+    "remaining_ratio":0.7385868153,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":438154
+  },
+  {
+    "name":"CASH X20 BINGO",
+    "remaining_prizes":240063,
+    "total_prizes":2863500,
+    "prize_amount":0.0,
+    "remaining_ratio":0.083835516,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":100141
+  },
+  {
+    "name":"CASH X100",
+    "remaining_prizes":1025021,
+    "total_prizes":6109965,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1677621721,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":382025
+  },
+  {
+    "name":"CASH X10",
+    "remaining_prizes":965859,
+    "total_prizes":5256986,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1837286613,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":390499
+  },
+  {
+    "name":"$50 OR $100",
+    "remaining_prizes":15096,
+    "total_prizes":741594,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0203561517,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":13071
+  },
+  {
+    "name":"$5,000,000 BLITZ",
+    "remaining_prizes":4500214,
+    "total_prizes":4778448,
+    "prize_amount":0.0,
+    "remaining_ratio":0.9417731448,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1705413
+  },
+  {
+    "name":"$5,000 HOLIDAY FRENZY",
+    "remaining_prizes":1581651,
+    "total_prizes":1581651,
+    "prize_amount":0.0,
+    "remaining_ratio":1.0,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":669661
+  },
+  {
+    "name":"$300,000,000 CASH PAYOUT",
+    "remaining_prizes":1105385,
+    "total_prizes":5850825,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1889280572,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":448753
+  },
+  {
+    "name":"$3,000,000 MAX",
+    "remaining_prizes":861099,
+    "total_prizes":4500026,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1913542277,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":387472
+  },
+  {
+    "name":"$3,000,000 GRANDE",
+    "remaining_prizes":870977,
+    "total_prizes":2514425,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3463921175,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":436619
+  },
+  {
+    "name":"$3,000,000 CA$H",
+    "remaining_prizes":1661316,
+    "total_prizes":2459693,
+    "prize_amount":0.0,
+    "remaining_ratio":0.675415997,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":738094
+  },
+  {
+    "name":"$25,000 EXTRA CA$H",
+    "remaining_prizes":1501736,
+    "total_prizes":2012821,
+    "prize_amount":0.0,
+    "remaining_ratio":0.7460852207,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":581018
+  },
+  {
+    "name":"$2,000,000 CASHWORD",
+    "remaining_prizes":1479498,
+    "total_prizes":4784874,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3092031264,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":696583
+  },
+  {
+    "name":"$100S FOR THE HOLIDAYS",
+    "remaining_prizes":1643779,
+    "total_prizes":1643779,
+    "prize_amount":0.0,
+    "remaining_ratio":1.0,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":716870
+  },
+  {
+    "name":"$100, $200 OR $500!",
+    "remaining_prizes":21494,
+    "total_prizes":988630,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0217411974,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":17971
+  },
+  {
+    "name":"$10,000,000 DELUXE",
+    "remaining_prizes":151216,
+    "total_prizes":4836861,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0312632511,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":100560
+  },
+  {
+    "name":"$10,000,000 CASH",
+    "remaining_prizes":2201868,
+    "total_prizes":5010332,
+    "prize_amount":0.0,
+    "remaining_ratio":0.4394654885,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1288260
+  },
+  {
+    "name":"$10,000,000 BONUS",
+    "remaining_prizes":197578,
+    "total_prizes":4949938,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0399152474,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":129177
+  },
+  {
+    "name":"$10,000 A WEEK FOR LIFE",
+    "remaining_prizes":7648523,
+    "total_prizes":13111745,
+    "prize_amount":0.0,
+    "remaining_ratio":0.583333721,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":2366547
+  },
+  {
+    "name":"$1,000,000 HOLIDAY CASH",
+    "remaining_prizes":297526,
+    "total_prizes":1365869,
+    "prize_amount":0.0,
+    "remaining_ratio":0.217829089,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":173826
+  },
+  {
+    "name":"$1,000,000 GRANDE",
+    "remaining_prizes":152255,
+    "total_prizes":1846219,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0824685479,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":71229
+  },
+  {
+    "name":"$1,000,000 GOLD",
+    "remaining_prizes":246398,
+    "total_prizes":1358412,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1813867958,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":106433
+  },
+  {
+    "name":"$5,000,000 CASH ROYALE",
+    "remaining_prizes":1660432,
+    "total_prizes":4655664,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3566477306,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":652855
+  },
+  {
+    "name":"$500 HOLIDAY BONUS",
+    "remaining_prizes":1241975,
+    "total_prizes":1241975,
+    "prize_amount":0.0,
+    "remaining_ratio":1.0,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":512873
+  },
+  {
+    "name":"CASH DROP",
+    "remaining_prizes":377733,
+    "total_prizes":2045865,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1846324171,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":153357
+  },
+  {
+    "name":"$500,000 BLAST",
+    "remaining_prizes":517391,
+    "total_prizes":2276540,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2272707706,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":222500
+  },
+  {
+    "name":"BONUS BUCK$",
+    "remaining_prizes":3611043,
+    "total_prizes":4587224,
+    "prize_amount":0.0,
+    "remaining_ratio":0.7871956983,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1535558
+  },
+  {
+    "name":"BONUS 5X",
+    "remaining_prizes":826303,
+    "total_prizes":3765880,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2194183033,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":373861
+  },
+  {
+    "name":"BONUS 50X",
+    "remaining_prizes":2773602,
+    "total_prizes":5740038,
+    "prize_amount":0.0,
+    "remaining_ratio":0.4832027244,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":1370709
+  },
+  {
+    "name":"BONUS 20X",
+    "remaining_prizes":890906,
+    "total_prizes":3316958,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2685912815,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":379341
+  },
+  {
+    "name":"BONUS 15X CASHWORD",
+    "remaining_prizes":912250,
+    "total_prizes":3301068,
+    "prize_amount":0.0,
+    "remaining_ratio":0.276349957,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":437499
+  },
+  {
+    "name":"BONUS 10X",
+    "remaining_prizes":652766,
+    "total_prizes":2477436,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2634845058,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":259645
+  },
+  {
+    "name":"BONUS 100X (50 tx)",
+    "remaining_prizes":2626732,
+    "total_prizes":4885828,
+    "prize_amount":0.0,
+    "remaining_ratio":0.5376226916,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":965516
+  },
+  {
+    "name":"BLACKJACK DOUBLER",
+    "remaining_prizes":452771,
+    "total_prizes":2014352,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2247725323,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":184540
+  },
+  {
+    "name":"BINGO MULTIPLIER",
+    "remaining_prizes":401830,
+    "total_prizes":2301557,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1745905055,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":173758
+  },
+  {
+    "name":"BIG MONEY X20",
+    "remaining_prizes":147695,
+    "total_prizes":2211854,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0667742988,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":68025
+  },
+  {
+    "name":"ALL CASH",
+    "remaining_prizes":431187,
+    "total_prizes":2236737,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1927750111,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":241438
+  },
+  {
+    "name":"9S IN A LINE DOUBLER",
+    "remaining_prizes":1462342,
+    "total_prizes":2667626,
+    "prize_amount":0.0,
+    "remaining_ratio":0.5481810419,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":725105
+  },
+  {
+    "name":"5 TIMES LUCKY",
+    "remaining_prizes":298341,
+    "total_prizes":2848281,
+    "prize_amount":0.0,
+    "remaining_ratio":0.1047442299,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":153173
+  },
+  {
+    "name":"3-2-WON!",
+    "remaining_prizes":1083304,
+    "total_prizes":2756643,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3929794319,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":524663
+  },
+  {
+    "name":"25X THE GOLD",
+    "remaining_prizes":261427,
+    "total_prizes":2161653,
+    "prize_amount":0.0,
+    "remaining_ratio":0.120938467,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":115340
+  },
+  {
+    "name":"$500,000 YEAR OF THE SNAKE",
+    "remaining_prizes":481955,
+    "total_prizes":1535267,
+    "prize_amount":0.0,
+    "remaining_ratio":0.3139225946,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":209822
+  },
+  {
+    "name":"$500,000 MATCH TO WIN",
+    "remaining_prizes":360158,
+    "total_prizes":1435606,
+    "prize_amount":0.0,
+    "remaining_ratio":0.2508752401,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":153805
+  },
+  {
+    "name":"Set for Life",
+    "remaining_prizes":262721,
+    "total_prizes":12474603,
+    "prize_amount":0.0,
+    "remaining_ratio":0.0210604698,
+    "expected_value":0.0,
+    "value_score":0.0,
+    "grand_prizes_remaining":142391
+  }
+]
